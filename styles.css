@@ -5,6 +5,14 @@
     font-family: 'Special Elite', monospace;
 }
 
+body {
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;  /*Pra fixar o footer*/
+}
+
 .container {
     max-width: 600px;
     margin: 0 auto;
