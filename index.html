@@ -6,8 +6,11 @@
     <title>QR CODE</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
     <div class="container">
         <h1 class="title">Crie seu QRCODE</h1>
         <textarea class="textarea" maxlength="280" rows="5" placeholder="Digite seu link aqui para gerar o QR Code" ></textarea>
@@ -18,6 +21,52 @@
         <br>
         <button class="button" onclick="GerarQRCode()">Gerar QRCode</button>
     </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <span>Desenvolvido por Ana Karoline Ribeiro</span>
+                <span class="heart">💖</span>
+            </div>
+            
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h4>🚀 Tecnologias</h4>
+                    <div class="tech-stack">
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">QR API</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>✨ Recursos</h4>
+                    <p>Geração instantânea de QR Code</p>
+                    <p>Dark/Light Mode</p>
+                    <p>Interface Intuitiva</p>
+                    <!-- <p>Download/visualização do código</p> -->
+                    <p>Limite de 280 caracteres</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>📧 Contato</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ana-karoline-silva-ribeiro" class="social-link" title="LinkedIn" target="_blank">💼</a>
+                        <a href="https://github.com/Ana-Karoline-Tech" class="social-link" title="GitHub" target="_blank">🐱</a>
+                        <a href="#" class="social-link" title="Email" id="email-link" target="_blank">📧</a>
+                        <a href="#" class="social-link" title="Portfolio" target="_blank">🌐</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 QR Code Generator | Feito com dedicação e tecnologia 🚀</p>
+                <p>Conectando o mundo através de códigos QR ✨</p>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
 </body>
 </html>
