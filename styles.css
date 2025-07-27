@@ -7,6 +7,107 @@
 
 body {
     min-height: 100vh;
+    padding-top: 70px; /* Altura do navbar */
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #333333;
+    transition: all 0.3s ease;
+}
+
+.navbar-custom {
+    background: linear-gradient(135deg, #f136b2 19%, #e23da0 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 1030;
+    transition: all 0.3s ease;
+}
+
+.main-content {
+    flex: 1;
+    padding-top: 55px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+    transition: all 0.3s ease !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease !important;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all 0.3s ease !important;
+}
+
+.navbar-custom .theme-toggle {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease !important;
+}
+
+.navbar-custom .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Reset para o botão de tema */
+.navbar .theme-toggle {
+    all: unset;
+    cursor: pointer;
+}
+
+/* Dark Mode Styles - Integrado com o sistema existente */
+body.dark-mode .navbar-custom {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+body.dark-mode .navbar-custom .theme-toggle {
+    background-color: #6c757d;
+}
+
+body.dark-mode .navbar-custom .theme-toggle:hover {
+    background-color: #5a6268;
+}
+
+/* Mantendo seus estilos existentes para outros elementos */
+body.dark-mode .navbar-custom .nav-link {
+    color: #ffffff !important;
+}
+
+/* Ajuste do ícone do tema */
+#theme-icon {
+    transition: all 0.3s ease;
+}
+
+body:not(.dark-mode) #theme-icon {
+    content: "\f494"; /* ícone de lua */
+    font-family: "bootstrap-icons";
+}
+
+body.dark-mode #theme-icon {
+    content: "\f185"; /* ícone de sol */
+    font-family: "bootstrap-icons";
 }
 
 .main-content {
@@ -14,7 +115,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 600px !important;
     margin: 0 auto;
      margin-top: 150px; 
     padding: 20px;
@@ -41,13 +142,13 @@ body {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: #e30cb4 !important;
+    background-color: #f30ec1 !important;
     color: white;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: #b70d87 !important;
+    background-color: #d0129b !important;
 }
 
 .image {

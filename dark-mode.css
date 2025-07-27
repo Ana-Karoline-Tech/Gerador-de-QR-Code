@@ -38,22 +38,7 @@
             background-color: #218838;
         }
 
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 20px;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .theme-toggle:hover {
-            background-color: #0056b3;
-        }
+        
 
         /* Dark mode styles */
         body.dark-mode {
@@ -83,11 +68,8 @@
             background-color: #5a6268;
         }
 
-       body.dark-mode .textarea .theme-toggle {
-            background-color: #6c757d;
-            border-color: #0d09cd;
-        }
 
+        
        
 
        
